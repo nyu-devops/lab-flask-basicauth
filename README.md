@@ -4,7 +4,9 @@ This repository is part of lab for the NYU DevOps class for Spring 2018, CSCI-GA
 # Usage
 In order to use the Flask HTTPBasicAuth extension you need to instanciate the class in your code:
 
-```
+```python
+    from flask_httpauth import HTTPBasicAuth
+
     auth = HTTPBasicAuth()
 ```
 If you are creating a microservice, you want to override the default web browser behavor of prompting for a userid and password by supplying your own autorization handler that does not return 401
